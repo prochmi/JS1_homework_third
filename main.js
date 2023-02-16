@@ -3,7 +3,8 @@ let jmeno = prompt ("Zadej své Jméno")
 let prijmeni = prompt ("Zadej své Přijmení")
 let rok = Number(prompt("Zadej rok svého narození"))
 let barva = prompt("Zadej oblíbenou barvu ANGLICKY")
-let letos = 2023
+let datum = new Date()
+let letos = datum.getFullYear()
 let vek = letos - rok
 
 vysledek =  jmeno +" "+ prijmeni +" "+ vek
